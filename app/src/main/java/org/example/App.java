@@ -26,7 +26,7 @@ public class App {
                 .start();
         try (Scope scope = tracer.activateSpan(span)) {
             // Alternatively, set tags after creation
-
+            Thread.sleep(35);
         } catch (Exception e) {
             // Set error on span
         } finally {

@@ -3,3 +3,36 @@
 
 # Ignore Gradle build output directory
 build
+
+# Ignore jar files
+*.jar
+
+# Ignore Terraform lock files
+*.tflock
+
+# Ignore all .tfvars files, which might contain sensitive data, such as
+# password, private keys, and other secrets.
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally and should not be committed
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore the directory created by Terraform init, as it contains provider plugins and workspace information
+.terraform/
+
+# Ignore log files
+*.log
+
+# Ignore crash log files
+crash.log
+
+# Ignore any .terraform directories or files that may contain workspace-specific values
+**/.terraform/*
